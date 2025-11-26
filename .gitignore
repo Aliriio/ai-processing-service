@@ -1,0 +1,46 @@
+# ---- ENTORNO VIRTUAL ----
+.venv/
+venv/
+env/
+
+# ---- VARIABLES DE ENTORNO ----
+.env
+.env.*
+
+# ---- LOGS Y ARCHIVOS TEMPORALES ----
+logs/
+*.log
+*.tmp
+temp/
+tmp/
+
+# ---- CACHE DE PYTHON ----
+__pycache__/
+*.pyc
+
+# ---- CACHE DE HERRAMIENTAS ----
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# ---- NOTEBOOKS (opcional, si contienen datos grandes) ----
+.ipynb_checkpoints/
+
+# ---- ARCHIVOS AUTOMÁTICOS DE FASTAPI/UVICORN ----
+*.pid
+
+# ---- MODELOS, CHECKPOINTS Y PESO PESADO ----
+models/
+checkpoints/
+*.bin
+*.ckpt
+*.pt
+*.pth
+
+# ---- SALIDAS DE BUILD O DEPLOY ----
+dist/
+build/
+
+# ---- ARCHIVOS DE EDITOR ----
+.vscode/
+.idea/

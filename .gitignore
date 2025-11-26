@@ -6,6 +6,7 @@ env/
 # ---- VARIABLES DE ENTORNO ----
 .env
 .env.*
+!.env.example
 
 # ---- LOGS Y ARCHIVOS TEMPORALES ----
 logs/
@@ -23,13 +24,13 @@ __pycache__/
 .mypy_cache/
 .cache/
 
-# ---- NOTEBOOKS (opcional, si contienen datos grandes) ----
+# ---- NOTEBOOKS ----
 .ipynb_checkpoints/
 
-# ---- ARCHIVOS AUTOMÁTICOS DE FASTAPI/UVICORN ----
+# ---- FASTAPI / UVICORN ----
 *.pid
 
-# ---- MODELOS, CHECKPOINTS Y PESO PESADO ----
+# ---- MODELOS Y PESOS ----
 models/
 checkpoints/
 *.bin
@@ -37,7 +38,18 @@ checkpoints/
 *.pt
 *.pth
 
-# ---- SALIDAS DE BUILD O DEPLOY ----
+# ---- DATOS PESADOS ----
+data/
+datasets/
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.npy
+*.npz
+*.pkl
+
+# ---- SALIDAS DE BUILD ----
 dist/
 build/
 
